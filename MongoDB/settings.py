@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'Tienda'
 ]
 
 MIDDLEWARE = [
@@ -73,6 +74,13 @@ WSGI_APPLICATION = 'MongoDB.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+DATABASES = {
+       'default': {
+           'ENGINE': 'djongo',
+           'NAME': 'your-db-name',
+       }
+   }
+   
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
