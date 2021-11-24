@@ -14,7 +14,7 @@ class Videojuego(models.Model):
         return str(self.nombre)
 
     class Meta:
-        abstract = True
+        abstract = False
 
 class Inventario(models.Model):
     inventario_id = models.CharField(max_length=100)
